@@ -2,6 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
     <div className="max-w-5xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
         Projects
@@ -31,6 +32,7 @@ export default function Projects() {
         slug="2d-engine"
         status="Early Development"
       />
+    </div>
     </div>
   );
 }

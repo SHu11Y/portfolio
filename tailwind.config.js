@@ -23,8 +23,5 @@ export default {
     },
   },
 
-  plugins: [
-    // Add official Tailwind plugins here if needed, e.g. forms, typography
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [],
 };

@@ -38,7 +38,7 @@ export default function ProjectCard({
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
+        <p className="text-gray-800 dark:text-gray-300 mb-4">
           {description}
         </p>
 
