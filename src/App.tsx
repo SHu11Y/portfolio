@@ -27,7 +27,7 @@ export default function App() {
   }, [dark]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Navbar dark={dark} onToggleDark={() => setDark((d) => !d)} />
       <Routes>
         <Route path="/" element={<Home dark={dark} onToggleDark={() => setDark((d) => !d)} />} />
