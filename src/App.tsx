@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -27,13 +27,13 @@ export default function App() {
   }, [dark]);
 
   return (
-    <BrowserRouter basename="/portfolio">
+    <HashRouter>
       <Navbar dark={dark} onToggleDark={() => setDark((d) => !d)} />
       <Routes>
         <Route path="/" element={<Home dark={dark} onToggleDark={() => setDark((d) => !d)} />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectDetails />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
