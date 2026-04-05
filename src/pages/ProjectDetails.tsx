@@ -64,11 +64,13 @@ export default function ProjectDetails() {
 
   if (!project) {
     return (
-      <div className="max-w-3xl mx-auto px-6 py-12">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <div className="max-w-3xl mx-auto px-6 py-12">
         <p className="mb-4 text-gray-700 dark:text-gray-300">Project not found.</p>
         <Link to="/projects" className="text-blue-600 dark:text-blue-400 hover:underline">
           ← Back to Projects
         </Link>
+      </div>
       </div>
     );
   }
@@ -84,6 +86,7 @@ export default function ProjectDetails() {
       : "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200";
 
   return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
     <div className="max-w-3xl mx-auto px-6 py-12">
       {/* Back Link */}
       <Link to="/projects" className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
@@ -131,6 +134,7 @@ export default function ProjectDetails() {
         <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">What I Learned</h2>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{learned}</p>
       </section>
+    </div>
     </div>
   );
 }

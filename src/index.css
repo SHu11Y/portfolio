@@ -1,6 +1,2 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/*Tailwind directives are processed at build time
-	•	Plain CSS language servers don’t know them*/
-    
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
